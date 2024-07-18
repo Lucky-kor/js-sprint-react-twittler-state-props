@@ -436,6 +436,11 @@ describe("Tweets.js 트윗 전송 폼 테스트", () => {
       userEvent.clear(textarea);
 
       const selectedTweets = container.querySelectorAll(".tweet__message");
+      //console.log(selectedTweets)
+      console.log(selectedTweets[0].textContent);
+      {/* expect(selectedTweets[0]).toBe(queryByText(msg)); */}
+      {/* selectedTweets[0] = [object HTMLDivElement] */}
+
       expect(selectedTweets[0]).toBe(queryByText(msg));
     });
   });
